@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adv. Abhishek Kumar Pandey | Advocate High Court Allahabad</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN for Legal & UI Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            950: '#070d18',
+                            900: '#0c1626',
+                            800: '#14233c',
+                            700: '#1d3153'
+                        },
+                        gold: {
+                            400: '#e5c07b',
+                            500: '#c69a47',
+                            600: '#aa7e32',
+                            700: '#8c6523'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fce4b8 0%, #d8a857 50%, #9e6f28 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow:hover {
+            box-shadow: 0 10px 25px -5px rgba(198, 154, 71, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-navy-950 text-slate-200 font-sans antialiased selection:bg-gold-500 selection:text-navy-950">
+
+    <!-- Top Info Bar -->
+    <div class="bg-navy-900 border-b border-navy-800 text-xs py-2 px-4 sm:px-8 text-slate-400">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+                <span><i class="fa-solid fa-scale-balanced text-gold-500 mr-1.5"></i> Allahabad High Court Bar Practice</span>
+                <span class="hidden md:inline">•</span>
+                <span><i class="fa-solid fa-location-dot text-gold-500 mr-1.5"></i> Chambers: Prayagraj</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+910000000000" class="hover:text-gold-400 transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone-volume text-gold-500"></i> Chamber Registry: +91 (Available on Request)
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="sticky top-0 z-40 bg-navy-950/95 backdrop-blur-md border-b border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand / Counsel Name -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-navy-950 font-serif font-bold text-xl shadow-lg shadow-gold-500/20 group-hover:scale-105 transition-transform">
+                        AP
+                    </div>
+                    <div>
+                        <div class="font-serif font-bold tracking-wider text-base sm:text-lg text-slate-100 uppercase leading-snug">
+                            Abhishek Pandey &amp; Associates
+                        </div>
+                        <div class="text-xs text-gold-400 tracking-wider uppercase font-semibold">
+                            Advocate High Court Allahabad
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+                    <a href="#home" class="hover:text-gold-400 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-gold-400 transition-colors">About Counsel</a>
+                    <a href="#practice" class="hover:text-gold-400 transition-colors">Practice Areas</a>
+                    <a href="#chambers" class="hover:text-gold-400 transition-colors">Chambers</a>
+                    <a href="#consultation" class="hover:text-gold-400 transition-colors">Consultation</a>
+                </nav>
+
+                <!-- Header CTA Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="#consultation" class="px-5 py-2.5 rounded-md bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 font-semibold text-sm hover:from-gold-400 hover:to-gold-500 shadow-md shadow-gold-600/20 transition-all">
+                        Schedule Consultation
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobileMenuBtn" type="button" aria-label="Toggle Navigation Menu" class="p-2 rounded-lg bg-navy-900 border border-navy-800 text-slate-300 hover:text-gold-400 focus:outline-none">
+                        <i class="fa-solid fa-bars-staggered text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-navy-900 border-b border-navy-800 px-6 py-5 space-y-4">
+            <a href="#home" class="block text-slate-200 hover:text-gold-400 font-medium mobile-nav-link">Home</a>
+            <a href="#about" class="block text-slate-200 hover:text-gold-400 font-medium mobile-nav-link">About Counsel</a>
+            <a href="#practice" class="block text-slate-200 hover:text-gold-400 font-medium mobile-nav-link">Practice Areas</a>
+            <a href="#chambers" class="block text-slate-200 hover:text-gold-400 font-medium mobile-nav-link">Chambers</a>
+            <a href="#consultation" class="block text-slate-200 hover:text-gold-400 font-medium mobile-nav-link">Consultation</a>
+            <a href="#consultation" class="block w-full text-center py-3 bg-gold-500 text-navy-950 font-semibold rounded-md mobile-nav-link">Schedule Consultation</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative overflow-hidden pt-16 pb-20 md:py-28 bg-gradient-to-b from-navy-950 via-navy-900 to-navy-950">
+        <!-- Subtle Background Motif -->
+        <div class="absolute inset-0 opacity-5 pointer-events-none flex items-center justify-center">
+            <i class="fa-solid fa-scale-unbalanced-flip text-[40rem] text-gold-500"></i>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Details -->
+                <div class="lg:col-span-8 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-800/80 border border-gold-500/30 text-gold-400 text-xs sm:text-sm font-semibold tracking-wide">
+                        <i class="fa-solid fa-award"></i> High Court of Judicature at Allahabad
+                    </div>
+
+                    <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+                        Adv. Abhishek Kumar Pandey
+                        <span class="block text-xl sm:text-2xl lg:text-3xl font-sans font-light text-slate-300 mt-2">
+                            B.Com. LL.B | High Court Allahabad
+                        </span>
+                    </h1>
+
+                    <p class="text-gold-400 font-serif text-base sm:text-xl font-medium tracking-wide">
+                        Founder — Abhishek Pandey &amp; Associates
+                    </p>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                        Dedicated to providing formidable legal representation with unwavering integrity, statutory vigilance, and commitment. Delivering strategic litigation solutions across High Court jurisdictions and district trial courts.
+                    </p>
+
+                    <!-- Practice Quick Badges -->
+                    <div class="pt-2 flex flex-wrap gap-2 justify-center lg:justify-start">
+                        <span class="bg-navy-800 text-slate-300 text-xs px-3 py-1.5 rounded border border-navy-700">Writ Petitions</span>
+                        <span class="bg-navy-800 text-slate-300 text-xs px-3 py-1.5 rounded border border-navy-700">Criminal Defense &amp; Bail</span>
+                        <span class="bg-navy-800 text-slate-300 text-xs px-3 py-1.5 rounded border border-navy-700">Civil &amp; Commercial</span>
+                        <span class="bg-navy-800 text-slate-300 text-xs px-3 py-1.5 rounded border border-navy-700">Revenue &amp; Property</span>
+                    </div>
+
+                    <!-- Hero Action Buttons -->
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#consultation" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg bg-gold-500 text-navy-950 font-bold hover:bg-gold-400 transition-all shadow-lg shadow-gold-500/20 text-base">
+                            <i class="fa-solid fa-calendar-check"></i> Book Legal Consultation
+                        </a>
+                        <a href="#chambers" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg bg-navy-800/90 text-slate-200 border border-gold-500/30 hover:border-gold-500 hover:text-white transition-all text-base">
+                            <i class="fa-solid fa-building-columns text-gold-400"></i> View Chamber Locations
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Feature Box / Card -->
+                <div class="lg:col-span-4">
+                    <div class="bg-gradient-to-b from-navy-800/90 to-navy-900 border border-gold-500/30 rounded-2xl p-6 sm:p-8 shadow-2xl relative">
+                        <div class="absolute -top-4 -right-4 w-12 h-12 bg-gold-500 text-navy-950 rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                            <i class="fa-solid fa-gavel"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-white mb-4">Chamber Highlights</h3>
+
+                        <ul class="space-y-4 text-sm text-slate-300">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-gold-400 mt-1"></i>
+                                <div>
+                                    <strong class="text-white block">Constitutional Remedies</strong>
+                                    Regular representation in Article 226 / 227 Writ Petitions.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-gold-400 mt-1"></i>
+                                <div>
+                                    <strong class="text-white block">Criminal Appellate Jurisdiction</strong>
+                                    Anticipatory, regular bail applications and trial appeals.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-gold-400 mt-1"></i>
+                                <div>
+                                    <strong class="text-white block">Dual Chamber Availability</strong>
+                                    Operational support at Allahabad High Court &amp;
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="mt-6 pt-6 border-t border-navy-700/80 text-xs text-slate-400 flex items-center justify-between">
+                            <span>High Court of Allahabad</span>
+                            <span class="text-gold-400 font-semibold">Active Practice</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-navy-900 border-t border-b border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md">
+                        <!-- Profile Card Representation -->
+                        <div class="rounded-2xl bg-gradient-to-tr from-navy-950 to-navy-800 p-8 border-2 border-gold-500/40 shadow-2xl text-center relative overflow-hidden">
+                            <div class="w-32 h-32 mx-auto rounded-full bg-navy-900 border-4 border-gold-500 flex items-center justify-center text-5xl text-gold-400 mb-6 shadow-inner">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl font-bold text-white">Adv. Abhishek Kumar Pandey</h3>
+                            <p class="text-gold-400 text-sm font-medium mt-1">Founder &amp; Managing Counsel</p>
+                            <p class="text-xs text-slate-400 mt-1">Abhishek Pandey &amp; Associates</p>
+
+                            <div class="mt-6 pt-6 border-t border-navy-700 grid grid-cols-2 gap-4 text-left">
+                                <div class="bg-navy-900/60 p-3 rounded-lg border border-navy-700">
+                                    <span class="block text-[11px] text-slate-400 uppercase">Degree</span>
+                                    <span class="font-bold text-slate-100 text-sm">B.Com. LL.B</span>
+                                </div>
+                                <div class="bg-navy-900/60 p-3 rounded-lg border border-navy-700">
+                                    <span class="block text-[11px] text-slate-400 uppercase">Forum</span>
+                                    <span class="font-bold text-slate-100 text-sm">High Court</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 bg-navy-950/80 p-3 rounded-lg border border-navy-700 text-xs text-slate-300 text-left">
+                                <i class="fa-solid fa-map-pin text-gold-400 mr-1.5"></i> Primary Seat: High Court Allahabad, Prayagraj
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6">
+                    <div>
+                        <span class="text-gold-400 text-sm uppercase tracking-widest font-semibold">About Counsel &amp; Firm</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2">
+                            Committed to Legal Excellence, Procedural Rigor &amp; Client Trust
+                        </h2>
+                    </div>
+
+                    <p class="text-slate-300 leading-relaxed text-base">
+                        I am <strong class="text-white">Advocate Abhishek Kumar Pandey</strong>, actively practicing before the prestigious <strong class="text-white">High Court of Judicature at Allahabad</strong>. As the founder of <strong class="text-white">Abhishek Pandey &amp; Associates</strong>, my legal practice is founded on deep statutory analysis, transparent litigation strategy, and zealous advocacy.
+                    </p>
+
+                    <p class="text-slate-300 leading-relaxed text-base">
+                        Our chambers handle a wide spectrum of litigations with a strong focus on Constitutional Writs, Bail applications, High Court appeals, Criminal Defense, Family disputes, and Complex Property &amp; Revenue matters. We understand the high stakes involved in legal battles and prioritize diligent drafting, prompt hearings, and direct communication.
+                    </p>
+
+                    <!-- Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-navy-950 border border-navy-800">
+                            <i class="fa-solid fa-shield-halved text-2xl text-gold-400 mb-2"></i>
+                            <h4 class="font-bold text-white text-sm">Integrity First</h4>
+                            <p class="text-xs text-slate-400 mt-1">Ethical, candid, and transparent legal consultation.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-navy-950 border border-navy-800">
+                            <i class="fa-solid fa-file-signature text-2xl text-gold-400 mb-2"></i>
+                            <h4 class="font-bold text-white text-sm">Sharp Pleadings</h4>
+                            <p class="text-xs text-slate-400 mt-1">Thorough drafting of petitions, counter-affidavits &amp; appeals.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-navy-950 border border-navy-800">
+                            <i class="fa-solid fa-handshake-angle text-2xl text-gold-400 mb-2"></i>
+                            <h4 class="font-bold text-white text-sm">Client Dedication</h4>
+                            <p class="text-xs text-slate-400 mt-1">Prompt chamber briefings and regular court hearing updates.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas -->
+    <section id="practice" class="py-20 bg-navy-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-400 text-sm uppercase tracking-widest font-semibold">Legal Practice Spectrum</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2">
+                    Core Areas of Litigation &amp; Advisory
+                </h2>
+                <p class="text-slate-400 mt-3 text-sm sm:text-base">
+                    Comprehensive litigation management from trial courts to the High Court of Allahabad.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-navy-900 border border-navy-800 hover:border-gold-500/50 rounded-xl p-7 transition-all duration-300 gold-border-glow group">
+                    <div class="w-12 h-12 rounded-lg bg-navy-800 flex items-center justify-center text-gold-400 text-2xl mb-5 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2 group-hover:text-gold-400 transition-colors">High Court Litigation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Representation in original and appellate proceedings before the Allahabad High Court, revision petitions, and special leave guidance.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-navy-900 border border-navy-800 hover:border-gold-500/50 rounded-xl p-7 transition-all duration-300 gold-border-glow group">
+                    <div class="w-12 h-12 rounded-lg bg-navy-800 flex items-center justify-center text-gold-400 text-2xl mb-5 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-scroll"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2 group-hover:text-gold-400 transition-colors">Writ Petitions</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Constitutional remedies under Article 226 including Writs of Mandamus, Certiorari, Habeas Corpus, and Prohibition against administrative inaction.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-navy-900 border border-navy-800 hover:border-gold-500/50 rounded-xl p-7 transition-all duration-300 gold-border-glow group">
+                    <div class="w-12 h-12 rounded-lg bg-navy-800 flex items-center justify-center text-gold-400 text-2xl mb-5 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-handcuffs"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2 group-hover:text-gold-400 transition-colors">Criminal Defense &amp; Bail</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Anticipatory bail, regular bail, Section 482 CrPC petitions for quashing FIRs/charge-sheets, and criminal trial defense.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-navy-900 border border-navy-800 hover:border-gold-500/50 rounded-xl p-7 transition-all duration-300 gold-border-glow group">
+                    <div class="w-12 h-12 rounded-lg bg-navy-800 flex items-center justify-center text-gold-400 text-2xl mb-5 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2 group-hover:text-gold-400 transition-colors">Civil &amp; Commercial Disputes</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Injunction suits, recovery proceedings, contract breaches, execution petitions, and First/Second Appeals before the High Court.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-navy-900 border border-navy-800 hover:border-gold-500/50 rounded-xl p-7 transition-all duration-300 gold-border-glow group">
+                    <div class="w-12 h-12 rounded-lg bg-navy-800 flex items-center justify-center text-gold-400 text-2xl mb-5 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-tree-city"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2 group-hover:text-gold-400 transition-colors">Property &amp; Revenue Matters</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Land acquisition challenges, UP Revenue Code disputes, partition suits, title declarations, mutation, and mutation appeals.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-navy-900 border border-navy-800 hover:border-gold-500/50 rounded-xl p-7 transition-all duration-300 gold-border-glow group">
+                    <div class="w-12 h-12 rounded-lg bg-navy-800 flex items-center justify-center text-gold-400 text-2xl mb-5 group-hover:bg-gold-500 group-hover:text-navy-950 transition-colors">
+                        <i class="fa-solid fa-people-roof"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2 group-hover:text-gold-400 transition-colors">Family &amp; Matrimonial</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Matrimonial dispute resolution, domestic violence petitions, maintenance (125 CrPC / BNSS), custody, and succession matters.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Chambers & Location Details -->
+    <section id="chambers" class="py-20 bg-navy-900 border-t border-b border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-400 text-sm uppercase tracking-widest font-semibold">Chambers &amp; Jurisdictions</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2">
+                    Consultation &amp; Operational Offices
+                </h2>
+                <p class="text-slate-400 mt-2 text-sm sm:text-base">
+                    Accessible locations to assist clients for High Court litigation and district court matters.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Allahabad High Court Chamber -->
+                <div class="bg-navy-950 border-2 border-navy-800 rounded-2xl p-8 relative overflow-hidden">
+                    <div class="flex items-center justify-between border-b border-navy-800 pb-4 mb-6">
+                        <div>
+                            <span class="text-xs uppercase font-bold text-gold-500 tracking-wider">Primary Seat of Practice</span>
+                            <h3 class="font-serif text-2xl font-bold text-white">High Court Allahabad Chamber</h3>
+                        </div>
+                        <i class="fa-solid fa-building-flag text-3xl text-gold-400"></i>
+                    </div>
+
+                    <div class="space-y-4 text-slate-300 text-sm">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-gold-400 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Location:</strong>
+                                <p>High Court of Judicature at Allahabad, Prayagraj, Uttar Pradesh - 211001</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-clock text-gold-400 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Court Hours:</strong>
+                                <p>Monday to Friday: 10:00 AM – 4:00 PM (Court Proceedings)</p>
+                                <p>Evening Chamber Consultations: By Prior Appointment</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-gavel text-gold-400 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Scope of Work:</strong>
+                                <p>Writ Petitions, High Court Appeals, Bail Applications, Revisions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pratapgarh Chamber -->
+                <div class="bg-navy-950 border-2 border-navy-800 rounded-2xl p-8 relative overflow-hidden">
+                    <div class="flex items-center justify-between border-b border-navy-800 pb-4 mb-6">
+                        <div>
+                            <span class="text-xs uppercase font-bold text-gold-500 tracking-wider">Regional Chamber Office</span>
+                            <h3 class="font-serif text-2xl font-bold text-white">Pratapgarh Chamber</h3>
+                        </div>
+                        <i class="fa-solid fa-landmark-dome text-3xl text-gold-400"></i>
+                    </div>
+
+                    <div class="space-y-4 text-slate-300 text-sm">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-gold-400 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Location:</strong>
+                                <p>Chamber Office, Uttar Pradesh</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-clock text-gold-400 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Availability:</strong>
+                                <p>Weekend Client Sessions &amp; Scheduled Weekday Consultations</p>
+                                <p>Saturday – Sunday: 10:00 AM – 6:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-file-contract text-gold-400 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Scope of Work:</strong>
+                                <p>District Court Briefings, Revenue Cases, Client Case Documentation &amp; Advisory.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation & Case Enquiry Section -->
+    <section id="consultation" class="py-20 bg-navy-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-navy-900 to-navy-950 border-2 border-gold-500/30 rounded-3xl p-6 sm:p-12 shadow-2xl">
+                <div class="text-center mb-10">
+                    <span class="text-gold-400 text-sm uppercase tracking-widest font-semibold">Book an Appointment</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2">
+                        Schedule a Legal Consultation
+                    </h2>
+                    <p class="text-slate-400 text-sm mt-2 max-w-lg mx-auto">
+                        Submit brief information regarding your legal matter. Our chamber will review and connect with you promptly.
+                    </p>
+                </div>
+
+                <form id="legalInquiryForm" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="clientName" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Full Name *</label>
+                            <input type="text" id="clientName" required placeholder="e.g. Rajesh Singh" class="w-full bg-navy-950 border border-navy-700 rounded-lg px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-gold-500 text-sm">
+                        </div>
+                        <div>
+                            <label for="clientPhone" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Phone / Mobile Number *</label>
+                            <input type="tel" id="clientPhone" required placeholder="e.g. +91 98765 43210" class="w-full bg-navy-950 border border-navy-700 rounded-lg px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-gold-500 text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="matterType" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Matter Category *</label>
+                            <select id="matterType" required class="w-full bg-navy-950 border border-navy-700 rounded-lg px-4 py-3 text-slate-200 focus:outline-none focus:border-gold-500 text-sm">
+                                <option value="" disabled selected>Select Legal Category</option>
+                                <option value="Writ Petition (Article 226/227)">High Court Writ Petition</option>
+                                <option value="Criminal Defense / Bail Application">Bail / Criminal Matter</option>
+                                <option value="Civil Suit / First Appeal">Civil Matter / Appeal</option>
+                                <option value="Property / Revenue Dispute">Property / Revenue Dispute</option>
+                                <option value="Matrimonial / Family Dispute">Family / Matrimonial Dispute</option>
+                                <option value="General Legal Consultation">General High Court Advisory</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="preferredChamber" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Preferred Consultation Mode *</label>
+                            <select id="preferredChamber" required class="w-full bg-navy-950 border border-navy-700 rounded-lg px-4 py-3 text-slate-200 focus:outline-none focus:border-gold-500 text-sm">
+                                <option value="High Court Allahabad Chamber">In-Person: Allahabad High Court Chamber</option>
+                                <option value="Pratapgarh Chamber">In-Person: Pratapgarh Chamber</option>
+                                <option value="Telephonic Consultation">Preliminary Telephonic Consultation</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="caseSummary" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Brief Summary of the Case / Dispute *</label>
+                        <textarea id="caseSummary" rows="4" required placeholder="Mention case stage, court involved (High Court or District), and key reliefs sought..." class="w-full bg-navy-950 border border-navy-700 rounded-lg px-4 py-3 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-gold-500 text-sm"></textarea>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4">
+                        <button type="submit" class="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 font-bold rounded-lg hover:from-gold-400 hover:to-gold-500 transition-all text-sm shadow-lg shadow-gold-500/20">
+                            Submit Consultation Request
+                        </button>
+
+                        <button type="button" id="whatsappQuickBtn" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-500 transition-all text-sm">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Quick WhatsApp Connect
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bar Council Compliance Disclaimer -->
+    <section class="py-10 bg-navy-950 border-t border-navy-800 text-xs text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="p-6 rounded-xl bg-navy-900/60 border border-navy-800 leading-relaxed space-y-2">
+                <p class="font-bold text-slate-300 uppercase tracking-wider flex items-center gap-2">
+                    <i class="fa-solid fa-triangle-exclamation text-gold-500"></i> Disclaimer (Bar Council of India Norms)
+                </p>
+                <p>
+                    As per the rules of the Bar Council of India, advocates are prohibited from soliciting work or advertising in any manner. By browsing this page or contacting the chamber, the user acknowledges that they are seeking information regarding <strong>Advocate Abhishek Kumar Pandey</strong> and <strong>Abhishek Pandey &amp; Associates</strong> of their own accord. No information on this website constitutes legal advice or creates an advocate-client relationship.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/80 border-t border-navy-800 py-10 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-white uppercase">Abhishek Pandey &amp; Associates</h4>
+                    <p class="text-xs text-gold-400 mt-1">Advocate High Court Allahabad | B.Com. LL.B</p>
+                    <p class="text-xs text-slate-500 mt-1">Chambers: High Court Allahabad (Prayagraj)</p>
+                </div>
+
+                <div class="flex items-center gap-6 text-xs text-slate-400">
+                    <a href="#home" class="hover:text-gold-400 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-gold-400 transition-colors">Counsel Profile</a>
+                    <a href="#practice" class="hover:text-gold-400 transition-colors">Practices</a>
+                    <a href="#consultation" class="hover:text-gold-400 transition-colors">Contact</a>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-navy-800/80 text-center text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2">
+                <span>&copy; <span id="currentYear"></span> Abhishek Pandey &amp; Associates. All Rights Reserved.</span>
+                <span>High Court of Judicature at Allahabad</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Feedback Modal -->
+    <div id="statusModal" class="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 hidden backdrop-blur-sm">
+        <div class="bg-navy-900 border-2 border-gold-500 rounded-2xl max-w-md w-full p-6 text-center shadow-2xl transform transition-all">
+            <div class="w-14 h-14 bg-gold-500/20 text-gold-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4 border border-gold-500/40">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white mb-2" id="modalTitle">Consultation Request Recorded</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6" id="modalMessage">
+                Thank you. Your inquiry has been documented. Chamber staff will review the brief and contact you for case scheduling.
+            </p>
+            <button id="closeModalBtn" type="button" class="w-full py-2.5 bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold rounded-lg transition-colors text-sm">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript Interactivity -->
+    <script>
+        // Set Year in footer dynamically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form Submission Modal Handling
+        const form = document.getElementById('legalInquiryForm');
+        const modal = document.getElementById('statusModal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const modalMessage = document.getElementById('modalMessage');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('clientName').value.trim();
+            const matter = document.getElementById('matterType').value;
+            const chamber = document.getElementById('preferredChamber').value;
+
+            modalMessage.innerHTML = `Thank you, <strong>${name}</strong>. Your inquiry regarding <em>"${matter}"</em> has been logged for consultation via <strong>${chamber}</strong>. Our chamber team will reach out to you shortly.`;
+            modal.classList.remove('hidden');
+            form.reset();
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        // WhatsApp Quick Action
+        document.getElementById('whatsappQuickBtn').addEventListener('click', () => {
+            const name = document.getElementById('clientName').value.trim() || 'Client';
+            const matter = document.getElementById('matterType').value || 'Legal Matter Inquiry';
+            const summary = document.getElementById('caseSummary').value.trim() || 'Seeking High Court consultation.';
+            
+            const text = encodeURIComponent(
+                `Namaste Adv. Abhishek Kumar Pandey,\n\nI am contacting your chamber regarding legal representation:\n- Name: ${name}\n- Matter: ${matter}\n- Brief: ${summary}\n- Seat: High Court Allahabad`
+            );
+            
+            // Redirects to standard WhatsApp link with prefilled text
+            window.open(`https://wa.me/?text=${text}`, '_blank');
+        });
+    </script>
+</body>
+</html>
